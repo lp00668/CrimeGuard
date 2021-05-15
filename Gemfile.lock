@@ -53,7 +53,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.7.5)
       msgpack (~> 1.0)
-    bootstrap (5.0.0)
+    bootstrap (5.0.1)
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.9.2, < 3)
       sassc-rails (>= 2.0.0)
@@ -136,13 +136,17 @@ GEM
     news-api (0.2.0)
     nifty-generators (0.4.6)
     nio4r (2.5.7)
-    nokogiri (1.11.3)
+    nokogiri (1.11.4)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    nokogiri (1.11.3-x64-mingw32)
+    nokogiri (1.11.4-x64-mingw32)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pg (0.19.0)
+    pg (0.19.0-x64-mingw32)
     popper_js (2.9.2)
+    postgres (0.8.1)
+      pg (~> 0)
     public_suffix (4.0.6)
     puma (3.12.6)
     racc (1.5.2)
@@ -226,7 +230,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     ssrf_filter (1.0.7)
     thor (1.1.0)
     thread_safe (0.3.6)
@@ -277,6 +280,7 @@ DEPENDENCIES
   mocha
   news-api
   nifty-generators
+  postgres (~> 0.8.1)
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.4)
   rails-controller-testing
@@ -285,7 +289,6 @@ DEPENDENCIES
   sassc-rails (>= 2.1.0)
   selenium-webdriver
   simple_form
-  sqlite3 (~> 1.4.2)
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
