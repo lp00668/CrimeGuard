@@ -1,5 +1,11 @@
 {
-  "name": "CrimeAlert",
-  "private": true,
-  "dependencies": {}
+  "name": "CrimeGuard",
+  "private": false,
+  "dependencies": {},
+  "version": "1.0.0",
+  "description": "Software Engineering Project",
+  "main": "index.js",
+  "repository": "https://github.com/lp00668/CrimeGuard.git",
+  "author": "Lp00668",
+  "license": "MIT"
 }
