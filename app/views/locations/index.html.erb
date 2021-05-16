@@ -16,7 +16,6 @@
 <% @locations.each do|location| %>
   <div class="card mb-3">
     <% if location.image.attached? %>
-      <img class="card-img-top" src="<%= url_for(location.image) %>" alt="Card image cap" style="height:200px;">      <div class="card-body">
         <h5 class="card-title"><%= location.typec %></h5>
         <h6 class="card-text"><%= location.address %></h6><br/>
         <p class="card-text"><%= location.description%></p>
