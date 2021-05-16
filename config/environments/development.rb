@@ -13,7 +13,7 @@ Rails.application.configure do
       :user_name            => "crimeguardapp@gmail.com",
       :password             => "crimeguard1",
       :authentication       => "plain",
-      :enable_starttls_auto => true
+      :enable_starttls_auto => true,
       :domain               => "heroku.com"
   }
   # In the development environment your application's code is reloaded on
