@@ -4,7 +4,7 @@ Rails.application.configure do
   # host = 'localhost:3000'
   # config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
   host = 'crimeguardapp@gmail.com' #replace with your own url
-  config.action_mailer.default_url_options = { host: "https://crime-guard.herokuapp.com/" }
+  config.action_mailer.default_url_options = { :host => "https://crime-guard.herokuapp.com/" }
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
@@ -45,7 +45,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 
