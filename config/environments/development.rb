@@ -14,6 +14,7 @@ Rails.application.configure do
       :password             => "crimeguard1",
       :authentication       => "plain",
       :enable_starttls_auto => true
+      :domain               => "heroku.com"
   }
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
