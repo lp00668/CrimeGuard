@@ -3,7 +3,6 @@ class Location < ApplicationRecord
 	has_many :comments, dependent: :destroy
 	has_one_attached :image
 	
-	validates :datetime, presence: true
 	validates :address, presence: true
 	
 	geocoded_by :address
