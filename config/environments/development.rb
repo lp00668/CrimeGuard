@@ -4,7 +4,7 @@ Rails.application.configure do
   # host = 'localhost:3000'
   # config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
   host = 'crimeguardapp@gmail.com' #replace with your own url
-  config.action_mailer.default_url_options = { :host => "https://crime-guard.herokuapp.com/" }
+  config.action_mailer.default_url_options = { host: "https://crime-guard.herokuapp.com/" }
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
@@ -14,7 +14,6 @@ Rails.application.configure do
       :password             => "crimeguard1",
       :authentication       => "plain",
       :enable_starttls_auto => true,
-      :domain               => "heroku.com"
   }
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
