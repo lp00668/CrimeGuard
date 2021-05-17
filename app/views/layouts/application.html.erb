@@ -14,21 +14,6 @@
 
   <body>
     <%= render 'shared/navbar' %>
-
-    </br>
-    <% if notice %>
-      <%= render 'layouts/alerts'%>
-    <% end %>
-  <% flash.each do |name, msg| %>
-    <% if msg.is_a?(String) %>
-      <div class="alert alert-dismissible alert-<%= name.to_s == 'notice' ? 'success' : 'danger' %>">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      </div>
-      <% flash.clear unless params['action'] == 'new' %>
-    <% end %>
-  <% end %>
-
     <%= yield %>
   </body>
 </html>
