@@ -4,7 +4,7 @@
   <div class="card mb-3">
     <% if @location.image.attached? %>
       <div class="card-body">
-        <h6 class="card-text"><%= @location.image %></h6><br/>
+        <%= image_tag @location.image, style: "width: 200px; display: block" %><br/>
         <h5 class="card-title"><%= @location.typec %></h5>
         <h6 class="card-text"><%= @location.address %></h6><br/>
         <p class="card-text"><%= @location.description%></p>
