@@ -17,7 +17,6 @@
   <div class="card mb-3">
     <% if location.image.attached? %>
         <h5 class="card-title"><%= location.typec %></h5>
-        <h6 <%= location.image %></h6>
         <h6 class="card-text"><%= location.address %></h6><br/>
         <p class="card-text"><%= location.description%></p>
         <p class="card-text"><small class="text-muted"><%= time_ago_in_words(location.datetime) %></small>    <%= location.city %></p>
