@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+datafile = Rails.root + 'db/cities.csv'
+
+CSV.foreach(datafile, headers: true) do |row|
+
+  Place.find_or_create_by({name: row[0]}) do |hr|
+    hr.name = row[0]
+    hr.latitude =  row[1]
+    hr.longitude =  row[2]
+  end
+
+end
