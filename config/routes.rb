@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get 'homepage/index'
   resources :places
   root 'homepage#index'
-  resources :reports
   get 'police/index'
   get 'news/index'
   resources :contacts, only: [:new, :create]
