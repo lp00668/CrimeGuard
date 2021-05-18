@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+GROUP 7
 
-Things you may want to cover:
+Github: https://github.com/lp00668/CrimeGuard 
 
-* Ruby version
+Ruby version : 2.7.3
+Rails version : 5.2.4.4
 
-* System dependencies
+Tested using Google Chrome web browser.
+Deployed website: https://crime-guard.herokuapp.com/ 
 
-* Configuration
+Description of site: CrimeGuard UK is a web application to be used to help safeguard the public by increasing awareness 
+                    of crime in England. Users can view crime statistics and reports about their local neighborhoods,
+                    make reports to help others stay safe, view nearest police stations and crime news and much more.
+                    The app's aim is to keep user's aware of perhaps increasing crime in their neighborhood and the report 
+                    submission will help to deters criminals.  
 
-* Database creation
+The application uses 4 APIs - Google Maps API, UK Police API, Geolocation API and Live news API which have all been configured. 
 
-* Database initialization
+Initially run command 'rails db:seed' for database initialization
 
-* How to run the test suite
+Admin User login details:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    Email address: crimeguardapp@gmail.com
+    Password: crimeguard1
+    
+For further Github commit history view : https://github.com/zmohamed01/CrimeAlert/commits/finalmaster
