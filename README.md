@@ -20,9 +20,16 @@ The application uses 4 APIs - Google Maps API, UK Police API, Geolocation API an
 
 Initially run command 'rails db:seed' for database initialization
 
-Admin User login details:
+Admin User login details (for use on website):
 
     Email address: crimeguardapp@gmail.com
     Password: crimeguard1
     
+How to create admin user login details on a git clone of the repository:
+1. open command prompt and change location to product directory
+2. type in 'rails c'
+3. type model = model.first to choose the first registered model (can be .second, .third so forth and so on)
+4. type model.update_attribute(:admin, true)
+5. the selected account should now have the same permission as admin account now
+
 For further Github commit history view : https://github.com/zmohamed01/CrimeAlert/commits/finalmaster
